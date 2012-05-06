@@ -59,11 +59,11 @@ def main():
 	
 	# Get color1 ranges from tejas.py
 	color1 = tejas.result[0]
-	print "Received values: "+str(tejas.result[0])
+	print "Received values: "+tejas.result[0]
 	color2 = tejas.result[1]
-	print "Received values: "+str(tejas.result[1])
+	print "Received values: "+tejas.result[1]
 	color3 = tejas.result[2]
-	print "Received values: "+str(tejas.result[2])
+	print "Received values: "+tejas.result[2]
 	
 	# Initialize capturing live feed from the camera
 	capture = 0

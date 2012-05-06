@@ -1,11 +1,9 @@
-
-#							Copyright (C) 2012
- 
-#	Miheer Mukund Vaidya
-#	Jaydev Kshirsagar
-#	Akash Agrawal
-#	Tejas Bubane
-
+#!/bin/bash
+#    			makefile for libhelper [leviosa]
+#	A wrapper for XTest
+#  Copyright (C) 2012  
+#  miheer mukund vaidya
+#  v.miheer@gmail.com
 #  This program is free software: you can redistribute it and/or modify
 #  it under the terms of the GNU General Public License as published by
 #  the Free Software Foundation, either version 3 of the License, or
@@ -19,22 +17,7 @@
 #  You should have received a copy of the GNU General Public License
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-The main.py is executable.
-Wrapper shell script is ruchi.sh execute it to see the helpertest.py execution.
-The helper.[c|h] includes the functions callable from python.
-Please refer ctypes module in it. http://docs.python.org/library/ctypes.html
-
-INSTALL
-_______
-
-$ make make
-$ make
-$ make install
-
-The above steps will create the libhelper.so.1 also install in current 
-directory.
-This shared lib will be used by ctypes.
-
-
-The example program XTest wrapper is helper_* functions. These are callable 
-from python directly.
+export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH;
+sudo python tejas/setup.py install
+python main.py;
+exit 0

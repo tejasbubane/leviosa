@@ -92,6 +92,6 @@ class leviosa:
 def main():
 	gtk.main()
 
-#if __name__ == '__main__':
-#	L = leviosa()
-#	main()
+if __name__ == '__main__':
+	L = leviosa()
+	main()
